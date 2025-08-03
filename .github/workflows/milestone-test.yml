@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Generate Changelog
-        uses: spring-io/github-changelog-generator@<version-or-sha>
+        uses: spring-io/github-changelog-generator@v0.0.12
         with:
           milestone: ${{ github.event.inputs.milestoneId }}
           
