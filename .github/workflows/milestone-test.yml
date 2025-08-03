@@ -1,0 +1,22 @@
+name: Milestone Closure Test
+
+on: 
+  milestone:
+    types: [closed]
+  workflow_dispatch:
+    inputs:
+      milestoneId:
+        description: 'Milestone ID'     
+        required: true
+        default: 'v0.1'
+jobs:
+  create-release-notes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Generate Changelog
+        uses: spring-io/github-changelog-generator@<version-or-sha>
+        with:
+          milestone: ${{ github.event.inputs.milestoneId }}
+          
