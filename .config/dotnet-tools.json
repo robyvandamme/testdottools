@@ -3,7 +3,7 @@
   "isRoot": true,
   "tools": {
     "dotbump": {
-      "version": "0.1.0-beta.18",
+      "version": "0.1.0",
       "commands": [
         "dotbump"
       ],
