@@ -2,6 +2,7 @@
 
 * Status: Draft
 * Date: {{DATE}} 
+* Supersedes: {{SUPERSEDES}}
 
 ## Context
 
