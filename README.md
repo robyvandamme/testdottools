@@ -37,13 +37,8 @@ dotnet tool update dotADR --prerelease
 
 NOTE: Always commit the tool version update separately.
 
-### What do we want to test?
+### Test
 
-* Init use overwrite and init a different directory for every test?
-* Add: pick one of the examples in the readme
-* Add with supersede: example in the readme
-
-So.....
 
 ```shell
 dotnet dotadr init -d ./test/doc/adr -o true --debug true --logfile log.txt
@@ -57,12 +52,19 @@ dotnet dotadr add "Implement Circuit Breaker Pattern for External Service Calls"
 dotnet dotadr add "Separate Read and Write Data Models" -s 002 --debug true --logfile log.txt
 ```
 
-Review. If it looks good commit it for reference. Then revert the commit? So we can run the same thing and essentially just script it....
+Review. If it looks good commit it for reference. Then revert the commit.
 
 Commit message: 
 
 ```text
-
 test: {OS} test dotADR {version}
-
 ```
+
+## Linux 
+
+Use devcontainers. Configured and tested.
+
+## Windows
+
+Use AWS EC2 - t3.medium - $0.0712 - 2 vCPU - 4 GiB - EBS Only - Up to 5 Gigabit
+
