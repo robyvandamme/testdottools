@@ -1,55 +1,35 @@
-# dotnet-start
+# dot Tools Tests
 
-A collection of default settings for new C# .NET repositories
+## dotADR
 
-- [.editorconfig](https://editorconfig.org) and [.gitattributes](https://www.git-scm.com/docs/gitattributes) from [Roslyn](https://raw.githubusercontent.com/dotnet/roslyn/master/.editorconfig)
-- [.gitignore](https://git-scm.com/docs/gitignore) adapted from [GitHub Visual Studio](https://github.com/github/gitignore/blob/master/VisualStudio.gitignore)
-- Global C# language version and [Nullable](https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references#nullable-contexts) configuration using [Directory.Build.props](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build)
-- Minimum .NET SDK version using [global.json](https://docs.microsoft.com/en-us/dotnet/core/tools/global-json)
-- [StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) configuration to match `.editorconfig`
+Upgrade to the latest version:
 
-## Project Configuration
-
-You can find example project configurations in the [test](https://github.com/build-ship-repeat/dotnet-start/tree/test) branch.
-
-### Configure a .NET Project With Style
-
-Add the relevant [StyleCop.Analyzers NuGet package](https://www.nuget.org/packages/StyleCop.Analyzers) to your project.
-Then add the following to your .csproj file:
-
-```xml
-
- <ItemGroup>
-    <AdditionalFiles Include="..\..\stylecop.json">
-      <Link>CodeStyle\stylecop.json</Link>
-    </AdditionalFiles>
-  </ItemGroup>
-
+```shell
+dotnet tool update dotADR --prerelease
 ```
 
-The above assumes your directory structure to be like `src/my-project`.
+NOTE: Always commit the version update separately.
 
+### What do we want to test?
 
-### Configure a .NET Project With Documentation
+* Init use overwrite and init a different directory for every test?
+* Add: pick one of the examples in the readme
+* Add with supersede: example in the readme
 
-```xml
+So.....
 
- <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-  </PropertyGroup>
-
+```shell
+dotnet dotadr init -d ./test/doc/adr -o true --debug true --logfile log.txt
 ```
 
-### Configure a .NET Project Without Documentation
-
-
-```xml
-
- <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <NoWarn>$(NoWarn),1573,1591,1712</NoWarn>
-  </PropertyGroup>
-
+```shell
+dotnet dotadr add "Implement Circuit Breaker Pattern for External Service Calls" --debug true --logfile log.txt
 ```
+
+```shell
+dotnet dotadr add "Separate Read and Write Data Models" -s 002 --debug true --logfile log.txt
+```
+
+Review. If it looks good commit it for reference. Then revert the commit? So we can run the same thing and essentially just script it....
+
+
