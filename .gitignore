@@ -365,3 +365,5 @@ MigrationBackup/
 
 # Local nuke parameter configuration
 .nuke/parameters.Local.json
+
+.DS_Store
