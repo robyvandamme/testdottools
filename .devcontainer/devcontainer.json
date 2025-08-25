@@ -1,0 +1,19 @@
+{
+  "name": "Linux Test Tools",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "devcontainer",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "containerEnv": {
+    "GITHUB_PACKAGES_USER": "${localEnv:GITHUB_PACKAGES_USER}",
+    "GITHUB_PACKAGES_TOKEN": "${localEnv:GITHUB_PACKAGES_TOKEN}",
+    "DOTNET_ENVIRONMENT": "Development"
+    },
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "ms-dotnettools.csdevkit",
+          "ms-dotnettools.vscode-dotnet-runtime"
+        ]
+      }
+    }
+}
