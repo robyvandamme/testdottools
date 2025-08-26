@@ -1,0 +1,118 @@
+2025-08-26 02:29:55.694 +00:00 [DBG] DotADR version {"AssemblyVersion":"0.1.0.0","AssemblyFileVersionInfo":"0.1.0.0","ProductVersion":"0.1.0-beta.9+Branch.main.Sha.75ae85036d9b842550373ad51d19ffc315eb65f6.75ae85036d9b842550373ad51d19ffc315eb65f6","Version":"0.1.0-beta.9","$type":"VersionInfo"}
+2025-08-26 02:29:55.817 +00:00 [DBG] Configuring app
+2025-08-26 02:29:55.917 +00:00 [DBG] Starting app
+2025-08-26 02:29:56.037 +00:00 [DBG] InitAdrCommand Execute started
+2025-08-26 02:29:56.038 +00:00 [DBG] ConfigurationService SaveAdrConfiguration started
+2025-08-26 02:29:56.073 +00:00 [DBG] ConfigurationService SaveAdrConfiguration returning
+2025-08-26 02:29:56.074 +00:00 [DBG] AdrFactory CreateDecisionTemplate started
+2025-08-26 02:29:56.075 +00:00 [DBG] AdrFactory CreateDecisionTemplate returning # {{ID}} {{TITLE}}
+
+* Status: Draft
+* Date: {{DATE}} 
+* Supersedes: {{SUPERSEDES}}
+
+## Context
+
+## Decision
+
+## Consequences
+2025-08-26 02:29:56.076 +00:00 [DBG] AdrFactory CreateDecisionRecord started
+2025-08-26 02:29:56.222 +00:00 [DBG] AdrFactory CreateDecisionRecord returning # 001 Use Architectural Decision Records
+
+* Status: Draft
+* Date: 2025-08-26 
+
+## Context
+
+## Decision
+
+## Consequences
+2025-08-26 02:29:56.223 +00:00 [DBG] AdrFileService InitializeDirectory started
+2025-08-26 02:29:56.223 +00:00 [DBG] Creating directory at C:\Users\Administrator\Projects\testdottools\test\doc\adr
+2025-08-26 02:29:56.224 +00:00 [DBG] Writing template to C:\Users\Administrator\Projects\testdottools\test\doc\adr\template.md
+2025-08-26 02:29:56.225 +00:00 [DBG] AdrFileService MakeSafeFileName started
+2025-08-26 02:29:56.233 +00:00 [DBG] AdrFileService MakeSafeFileName returning use-architectural-decision-records
+2025-08-26 02:29:56.234 +00:00 [DBG] AdrFileService InitializeDirectory returning
+2025-08-26 02:29:56.253 +00:00 [DBG] InitAdrCommand Execute returning
+2025-08-26 02:30:11.337 +00:00 [DBG] DotADR version {"AssemblyVersion":"0.1.0.0","AssemblyFileVersionInfo":"0.1.0.0","ProductVersion":"0.1.0-beta.9+Branch.main.Sha.75ae85036d9b842550373ad51d19ffc315eb65f6.75ae85036d9b842550373ad51d19ffc315eb65f6","Version":"0.1.0-beta.9","$type":"VersionInfo"}
+2025-08-26 02:30:11.452 +00:00 [DBG] Configuring app
+2025-08-26 02:30:11.553 +00:00 [DBG] Starting app
+2025-08-26 02:30:11.670 +00:00 [DBG] AddAdrCommand Execute started
+2025-08-26 02:30:11.670 +00:00 [DBG] Running AddAdrCommand with settings {"Title":"Implement Circuit Breaker Pattern for External Service Calls","Supersedes":null,"Debug":true,"LogFile":"log.txt","$type":"AddAdrSettings"}
+2025-08-26 02:30:11.671 +00:00 [DBG] ConfigurationService GetDotAdrConfiguration started
+2025-08-26 02:30:11.712 +00:00 [DBG] ConfigurationService GetDotAdrConfiguration returning {"Directory":"./test/doc/adr","$type":"DotAdrConfig"}
+2025-08-26 02:30:11.714 +00:00 [DBG] AdrFileService GetTemplate started
+2025-08-26 02:30:11.714 +00:00 [DBG] GetTemplate with directory C:\Users\Administrator\Projects\testdottools\test\doc\adr
+2025-08-26 02:30:11.715 +00:00 [DBG] AdrFileService GetTemplate returning # {{ID}} {{TITLE}}
+
+* Status: Draft
+* Date: {{DATE}} 
+* Supersedes: {{SUPERSEDES}}
+
+## Context
+
+## Decision
+
+## Consequences
+2025-08-26 02:30:11.716 +00:00 [DBG] AdrFileService GetNextRecordId started
+2025-08-26 02:30:11.728 +00:00 [DBG] AdrFileService GetNextRecordId returning 1
+2025-08-26 02:30:11.730 +00:00 [DBG] AdrFactory CreateDecisionRecord started
+2025-08-26 02:30:11.775 +00:00 [DBG] AdrFactory CreateDecisionRecord returning # 002 Implement Circuit Breaker Pattern for External Service Calls
+
+* Status: Draft
+* Date: 2025-08-26 
+
+## Context
+
+## Decision
+
+## Consequences
+2025-08-26 02:30:11.775 +00:00 [DBG] AdrFileService AddDecisionRecord started
+2025-08-26 02:30:11.775 +00:00 [DBG] AddDecisionRecord in directory LocalDirectory { RelativePath = ./test/doc/adr, AbsolutePath = C:\Users\Administrator\Projects\testdottools\test\doc\adr, NormalizedPath = ./test/doc/adr }
+2025-08-26 02:30:11.776 +00:00 [DBG] AdrFileService MakeSafeFileName started
+2025-08-26 02:30:11.781 +00:00 [DBG] AdrFileService MakeSafeFileName returning implement-circuit-breaker-pattern-for-external-service-calls
+2025-08-26 02:30:11.783 +00:00 [DBG] AdrFileService AddDecisionRecord returning 002-implement-circuit-breaker-pattern-for-external-service-calls.md
+2025-08-26 02:30:11.809 +00:00 [DBG] AddAdrCommand Execute returning
+2025-08-26 02:30:25.592 +00:00 [DBG] DotADR version {"AssemblyVersion":"0.1.0.0","AssemblyFileVersionInfo":"0.1.0.0","ProductVersion":"0.1.0-beta.9+Branch.main.Sha.75ae85036d9b842550373ad51d19ffc315eb65f6.75ae85036d9b842550373ad51d19ffc315eb65f6","Version":"0.1.0-beta.9","$type":"VersionInfo"}
+2025-08-26 02:30:25.696 +00:00 [DBG] Configuring app
+2025-08-26 02:30:25.810 +00:00 [DBG] Starting app
+2025-08-26 02:30:25.928 +00:00 [DBG] AddAdrCommand Execute started
+2025-08-26 02:30:25.928 +00:00 [DBG] Running AddAdrCommand with settings {"Title":"Separate Read and Write Data Models","Supersedes":"002","Debug":true,"LogFile":"log.txt","$type":"AddAdrSettings"}
+2025-08-26 02:30:25.929 +00:00 [DBG] ConfigurationService GetDotAdrConfiguration started
+2025-08-26 02:30:25.965 +00:00 [DBG] ConfigurationService GetDotAdrConfiguration returning {"Directory":"./test/doc/adr","$type":"DotAdrConfig"}
+2025-08-26 02:30:25.966 +00:00 [DBG] AdrFileService GetTemplate started
+2025-08-26 02:30:25.966 +00:00 [DBG] GetTemplate with directory C:\Users\Administrator\Projects\testdottools\test\doc\adr
+2025-08-26 02:30:25.967 +00:00 [DBG] AdrFileService GetTemplate returning # {{ID}} {{TITLE}}
+
+* Status: Draft
+* Date: {{DATE}} 
+* Supersedes: {{SUPERSEDES}}
+
+## Context
+
+## Decision
+
+## Consequences
+2025-08-26 02:30:25.968 +00:00 [DBG] AdrFileService GetNextRecordId started
+2025-08-26 02:30:25.978 +00:00 [DBG] AdrFileService GetNextRecordId returning 2
+2025-08-26 02:30:25.979 +00:00 [DBG] AdrFileService TryFindSupersededDecisionRecord started
+2025-08-26 02:30:25.981 +00:00 [DBG] AdrFileService TryFindSupersededDecisionRecord returning {"Id":"002","FileName":"002-implement-circuit-breaker-pattern-for-external-service-calls.md","Content":"# 002 Implement Circuit Breaker Pattern for External Service Calls\r\n\r\n* Status: Draft\r\n* Date: 2025-08-26 \r\n\r\n## Context\r\n\r\n## Decision\r\n\r\n## Consequences","$type":"SupersededDecisionRecord"}
+2025-08-26 02:30:25.982 +00:00 [DBG] AdrFactory CreateDecisionRecord started
+2025-08-26 02:30:26.023 +00:00 [DBG] AdrFactory CreateDecisionRecord returning # 003 Separate Read and Write Data Models
+
+* Status: Draft
+* Date: 2025-08-26 
+* Supersedes: [002](002-implement-circuit-breaker-pattern-for-external-service-calls.md)
+
+## Context
+
+## Decision
+
+## Consequences
+2025-08-26 02:30:26.024 +00:00 [DBG] AdrFileService AddDecisionRecord started
+2025-08-26 02:30:26.024 +00:00 [DBG] AddDecisionRecord in directory LocalDirectory { RelativePath = ./test/doc/adr, AbsolutePath = C:\Users\Administrator\Projects\testdottools\test\doc\adr, NormalizedPath = ./test/doc/adr }
+2025-08-26 02:30:26.025 +00:00 [DBG] AdrFileService MakeSafeFileName started
+2025-08-26 02:30:26.030 +00:00 [DBG] AdrFileService MakeSafeFileName returning separate-read-and-write-data-models
+2025-08-26 02:30:26.030 +00:00 [DBG] AdrFileService AddDecisionRecord returning 003-separate-read-and-write-data-models.md
+2025-08-26 02:30:26.031 +00:00 [DBG] Writing template to C:\Users\Administrator\Projects\testdottools\test\doc\adr\002-implement-circuit-breaker-pattern-for-external-service-calls.md
+2025-08-26 02:30:26.055 +00:00 [DBG] AddAdrCommand Execute returning
