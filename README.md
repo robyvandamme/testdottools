@@ -12,12 +12,20 @@ When testing private packages make sure the relevant environment variables are c
 
 ```xml
 
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<packageSources>
+		<clear />
+		<add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
+		<add key="robyvandamme" value="https://nuget.pkg.github.com/robyvandamme/index.json" protocolVersion="3" />
+	</packageSources>
 	<packageSourceCredentials>
 		<robyvandamme>
 			<add key="Username" value="%GITHUB_PACKAGES_USER%" />
 			<add key="ClearTextPassword" value="%GITHUB_PACKAGES_TOKEN%" />
 		</robyvandamme>
-	</packageSourceCredentials> 
+	</packageSourceCredentials>
+</configuration>
 
 ```
 
@@ -57,14 +65,29 @@ Review. If it looks good commit it for reference. Then revert the commit.
 Commit message: 
 
 ```text
-test: {OS} test dotADR {version}
+test: {OS} test {tool} {version}
 ```
 
-## Linux 
+## dotBump
 
-Use devcontainers. Configured and tested.
+Upgrade to the latest version:
 
-## Windows
+```shell
+dotnet tool update DotBump --prerelease
+```
 
-Use AWS EC2 - t3.medium - $0.0712 - 2 vCPU - 4 GiB - EBS Only - Up to 5 Gigabit
+NOTE: Always commit the tool version update separately.
 
+### Test
+
+```shell
+dotnet dotbump sdk -o output.json --debug true --logfile log.txt
+```
+
+Review. If it looks good commit it for reference. Then revert the commit.
+
+Commit message: 
+
+```text
+test: {OS} test {tool} {version}
+```
