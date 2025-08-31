@@ -91,3 +91,11 @@ Commit message:
 ```text
 test: {OS} test {tool} {version}
 ```
+
+## Linux 
+
+Use devcontainers. Configured and tested.
+
+## Windows
+
+Use AWS EC2 - t3.medium - $0.0712 - 2 vCPU - 4 GiB - EBS Only - Up to 5 Gigabit. Configured and tested.
